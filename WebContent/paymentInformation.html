@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Customer Payment Information</title>
+<link rel="stylesheet" href="paymentInfo.css"/>
+</head>
+
+<div>
+	<h1>
+		<img style="vertical-align:middle" src="cameraIcon.png" alt="Camera Icon" width="75" height="75">
+		<span class="title">Fabflix</span>
+	</h1>
+
+		<ul id="navigationBar">
+			<li><a class="active" href="mainPage.html">Home</a></li>
+			<li><a href="Browse">Browse</a></li>
+			<li><a href="advancedSearch.html">Advanced Search</a></li>
+			<li><a href="Checkout">Checkout</a></li>
+			<li><form action = "Search" id="searchBar">
+				Search:<input type="text" name="itemSearch">
+				<input type="submit" value="Search"></form></li>
+		</ul>
+</div>
+<body>
+
+<div id="paymentInfo">
+<h2>Billing Information</h2>
+<form id="custmerInfoForm" action="ConfirmationPage" method="POST">
+	<label for="firstName">First Name</label>
+	<br>
+	<input type="text" name="firstName" placeholder="John">
+	<br>
+	<label for="lastName">Last Name</label>
+	<br>
+	<input type="text" name="lastName" placeholder="Doe">
+	<br>
+	<label for="ccNumber">Credit Card Number</label>
+	<br>
+	<input type="number" name="ccNumber">
+	<br>
+	<label for="ccExp">Expiration Date (yyyy/mm/dd)</label>
+	<br>
+	<input type="text" name="ccExp" placeholder="ex: (1999/12/01)">
+	<br>
+	<button class="submitInfoButton" type="submit">Complete Purchase</button>
+</form>
+</div>
+
+</body>
+</html>

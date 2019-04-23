@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Context>
+
+    <!-- Defines a Data Source Connecting to localhost moviedb-->
+    <Resource name="jdbc/moviedb"
+              auth="Container"
+              driverClassName="com.mysql.jdbc.Driver"
+              type="javax.sql.DataSource"
+              username="mytestuser"
+              password="mypassword"
+              url="jdbc:mysql://18.218.229.146:3306/moviedb"/>
+
+
+    <Resource name="jdbc/SlaveDB" auth="Container" type="javax.sql.DataSource"
+              maxTotal="100" maxIdle="30" maxWaitMillis="10000" username="mytestuser"
+              password="mypassword" driverClassName="com.mysql.jdbc.Driver"
+              url="jdbc:mysql://18.218.229.146:3306/moviedb?autoReconnect=true&amp;useSSL=false"/>
+       
+      <!--  Define datasource connecting to master instance moviedb for write operations -->        
+    <Resource name="jdbc/moviedb"
+              auth="Container"
+              driverClassName="com.mysql.jdbc.Driver"
+              type="javax.sql.DataSource"
+              username="mytestuser"
+              password="mypassword"
+              url="jdbc:mysql://18.220.147.223:3306/moviedb"/>
+              
+    <Resource name="jdbc/MasterDB" auth="Container" type="javax.sql.DataSource"
+              maxTotal="100" maxIdle="30" maxWaitMillis="10000" username="mytestuser"
+              password="mypassword" driverClassName="com.mysql.jdbc.Driver"
+              url="jdbc:mysql://18.220.147.223:3306/moviedb?autoReconnect=true&amp;useSSL=false"/>
+        
+     
+</Context>

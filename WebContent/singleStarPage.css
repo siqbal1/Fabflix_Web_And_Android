@@ -1,0 +1,99 @@
+@charset "ISO-8859-1";
+
+
+h1
+{
+	text-align:center;
+}
+
+
+.title
+{
+	margin-top: -5px;
+	color: white;
+}
+
+body
+{
+	background-color: grey;
+	color:white;
+}
+
+#navigationBar
+{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #333;
+}
+
+#searchBar
+{
+	padding:8px 0px 0px 0px;
+	color:white;
+}
+
+li
+{
+	float: left;
+}
+
+li a
+{
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+li a:hover
+{
+	background-color: #111;
+}
+
+.active
+{
+	background-color:#4CAF50;
+}
+
+#advancedSearch
+{
+	color:white;
+}
+
+#starInfo
+{
+	width:300px;
+	color:white;
+	text-align:center;
+	
+	position: absolute;
+    top:200px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+
+
+
+#starInfo .movieLinkButton
+{
+	 background:none!important;
+     color:inherit;
+     border:none; 
+     padding:0!important;
+     font: inherit;
+     border-bottom:1px solid #444; 
+     cursor: pointer;
+}
+
+.autocomplete-suggestions { border: 1px solid #999; background: #808080; overflow: auto; }
+.autocomplete-suggestion { padding: 2px 5px; white-space: nowrap; overflow: hidden; }
+.autocomplete-selected { background: #000000; }
+.autocomplete-suggestions strong { font-weight: normal; color: #3399FF; }
+.autocomplete-group { padding: 2px 5px; }
+.autocomplete-group strong { display: block; border-bottom: 1px solid #000; }

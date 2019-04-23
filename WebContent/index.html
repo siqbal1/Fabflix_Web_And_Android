@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Fabflix Login Page</title>
+<script src='https://www.google.com/recaptcha/api.js'></script>
+<style>
+
+body
+{
+	background-color:grey;
+	text-align:center;
+	color:white;
+}
+h1
+{
+	color:white;
+}
+
+.button
+{
+	background-color:green;
+	color:white;
+	text-align:center;
+}
+
+
+
+</style>
+</head>
+<body>
+
+<h1>Welcome to Fablix</h1>
+
+<form id = "LoginForm" action="Login" method="POST">
+
+	Username:<input type="text" name="username"><br>
+	Password:<input type="password" name="password"><br>
+	<div class="g-recaptcha" data-sitekey="6LeZI1gUAAAAAHvv3hf2HH_FR3qEd7oiMEkI66vE"></div>
+	<input class = "button" type="submit" value="Log in"><br>
+	
+	
+
+</form>
+
+</body>
+</html>

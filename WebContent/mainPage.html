@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Fabflix Main Page</title>
+
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- include jquery autocomplete JS  -->
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.devbridge-autocomplete/1.4.7/jquery.autocomplete.min.js"></script>
+    
+<link rel="stylesheet" href="MainPage.css"/>
+</head>
+
+<div>
+	<h1>
+		<img style="vertical-align:middle" src="cameraIcon.png" alt="Camera Icon" width="75" height="75">
+		<span class="title">Fabflix</span>
+	</h1>
+
+		<ul id="navigationBar">
+			<li><a class="active" href="mainPage.html" onClick="loadCache();">Home</a></li>
+			<li><a href="Browse" onClick="loadCache();">Browse</a></li>
+			<li><a href="advancedSearch.html" onClick="loadCache();">Advanced Search</a></li>
+			<li><a href="Checkout" onClick="loadCache();">Checkout</a></li>
+			<li><form action = "Search" id="searchBar">
+				Search:<input type="text" name="itemSearch" id="autocomplete">
+				<input type="submit" onclick="handleNormalSearch(document.getElementById('autocomplete').value);" value="Search"></form>
+				
+				<script src="autocomplete.js"></script>
+			</li>
+		</ul>
+</div>
+
+
+<body>
+<br>
+<br>
+<br>
+<div id="imageContainer">
+	<img src="movieCountdown.gif">
+</div>
+
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Fabflix Advanced Search Page</title>
+
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- include jquery autocomplete JS  -->
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.devbridge-autocomplete/1.4.7/jquery.autocomplete.min.js"></script>
+    
+<link rel="stylesheet" href="MainPage.css"/>
+</head>
+
+<div>
+	<h1>
+		<img style="vertical-align:middle" src="cameraIcon.png" alt="Camera Icon" width="75" height="75">
+		<span class="title">Fabflix</span>
+	</h1>
+
+		<ul id="navigationBar">
+			<li><a href="mainPage.html" onClick="loadCache();">Home</a></li>
+			<li><a href="Browse" onClick="loadCache();">Browse</a></li>
+			<li><a class="active" href="advancedSearch.html" onClick="loadCache();">Advanced Search</a></li>
+			<li><a href="Checkout" onClick="loadCache();">Checkout</a></li>
+			<li><form action = "Search" id="searchBar">
+				Search:<input type="text" name="itemSearch" id="autocomplete">
+				<input type="submit" onclick="handleNormalSearch(document.getElementById('autocomplete').value)" value="Search"></form>
+				
+				<script src="autocomplete.js"></script>
+			</li>
+		</ul>
+</div>
+
+
+<h2>Advanced search</h2>
+
+<form action = "AdvancedSearch" method="GET" id="advancedSearch">
+		Title:<input type="text" name="titleSearch"> <br>
+		Year:<input type="number" name="yearSearch"> <br>
+		Director:<input type="text" name="directorSearch"> <br>
+		Stars Name: <input type="text" name="starName"><br>
+		<input type="submit" value="Search">
+</form>
+
+<body>
+
+</body>
+</html>
