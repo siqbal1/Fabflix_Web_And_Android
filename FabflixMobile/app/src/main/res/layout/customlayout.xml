@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/singleMovieTitleView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:onClick="goToSingleMovie"
+        android:text="Hello"
+        android:textColor="@android:color/white"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/movieDirector"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_below="@id/singleMovieTitleView"
+        android:layout_marginTop="44dp"
+
+        android:text="Director: "
+        android:textColor="@android:color/white" />
+
+    <TextView
+        android:id="@+id/singleMovieYearView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="89dp"
+        android:text="Year: "
+        android:textColor="@android:color/white" />
+
+    <TextView
+        android:id="@+id/movieGenres"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_below="@id/singleMovieYearView"
+
+        android:layout_marginTop="143dp"
+        android:text="Genres: "
+        android:textColor="@android:color/white" />
+
+    <TextView
+        android:id="@+id/movieCastList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="202dp"
+
+        android:text="Cast: "
+        android:textColor="@android:color/white" />
+</RelativeLayout>

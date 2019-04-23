@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">FabflixMobile</string>
+    <string name="title_activity_movie_list">MovieList</string>
+    <string name="title_activity_single_movie">SingleMovieActivity</string>
+</resources>

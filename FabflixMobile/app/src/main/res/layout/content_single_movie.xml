@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/darker_gray"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".SingleMovieActivity"
+    tools:showIn="@layout/activity_single_movie">
+
+    <TextView
+        android:id="@+id/singleMovieTitleView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:text="TextView"
+        android:textColor="@android:color/white"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/singleMovieDirectorView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="96dp"
+        android:text="Director: "
+        android:textColor="@android:color/white" />
+        "true"
+        android:layout_marginTop="104dp"
+        android:layout_below="@id/singleMovieTitleView"
+        android:layout_centerHo
+        android:text="Director: "
+        android:textColor="@android:color/white" />
+
+    <TextView
+        android:id="@+id/singleMovieYearView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="151dp"
+        android:layout_below="@id/singleMovieDirectorView"
+        android:text="Year: "
+        android:textColor="@android:color/white" />
+
+    <TextView
+        android:id="@+id/genreText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_below="@id/singleMovieYearView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="193dp"
+        android:text="Genres: "
+        android:textColor="@android:color/white" />
+
+    <TextView
+        android:id="@+id/singleMovieGenresView"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@id/genreText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="223dp"
+        android:text="TextView"
+        android:textColor="@android:color/white" />
+
+    <TextView
+        android:id="@+id/castText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="194dp"
+        android:paddingTop="0dp"
+        android:text="Cast:"
+        android:textColor="@android:color/white" />
+
+    <TextView
+        android:id="@+id/singleMovieCastView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/castText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-194dp"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textColor="@android:color/white" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/floatingActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:clickable="true"
+        android:onClick="goToSearch"
+        app:backgroundTint="@android:color/white"
+        app:srcCompat="@drawable/search" />
+</RelativeLayout>
